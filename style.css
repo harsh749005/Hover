@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fjalla One', sans-serif;
+    cursor: none;
+}
+body{
+    background-color: rgb(39, 38, 38);
+}
+p{
+    color: aliceblue;
+}
+/* #node1{
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    border-radius: 50px;
+} */
+.mod{
+    height: auto;
+    width: 800px;
+    
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.text1,.text2{
+    position: absolute;
+    font-size: 130px;
+    transition: opacity .8s;
+
+}
+.text2{
+    opacity: 0;
+}
+.cur{
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    opacity: .4;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    /* scale: 1; */
+    transition: scale .6s;
+    transition: scale  .6s;
+}
+.audiodiv{
+    width: 150px;
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    /* pointer-events: none; */
+}
+.play{
+    width: 20px;
+    z-index: 999;
+}
+.songtitle{
+    width: 100px;
+}
